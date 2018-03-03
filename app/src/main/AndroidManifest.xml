@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.shristy.travelfriend">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/icon1"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Railway"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity android:name=".Flight"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity android:name=".Bus"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity android:name=".Pnr"
+            android:parentActivityName=".Railway">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Railway" />
+        </activity>
+        <activity android:name=".Booktticket"
+            android:parentActivityName=".Railway">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Railway" />
+        </activity>>
+        <activity android:name=".Orderfood"
+            android:parentActivityName=".Railway">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Railway" />
+        </activity>
+
+        <activity android:name=".Bookthotel"
+            android:parentActivityName=".Railway">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Railway" />
+        </activity>
+
+        <activity android:name=".Seat"
+            android:parentActivityName=".Railway">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Railway" />
+        </activity>
+
+        <activity android:name=".Bookbticket"
+            android:parentActivityName=".Bus">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Bus" />
+        </activity>
+        <activity android:name=".Bookbhotel"
+            android:parentActivityName=".Bus">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Bus" />
+        </activity>
+
+        <activity android:name=".Bookfticket"
+            android:parentActivityName=".Flight">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Flight" />
+        </activity>
+
+        <activity android:name=".Bookfhotel"
+            android:parentActivityName=".Flight">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Flight" />
+        </activity>
+    </application>
+
+</manifest>
